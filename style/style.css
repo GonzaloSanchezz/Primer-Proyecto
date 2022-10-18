@@ -1,0 +1,179 @@
+/*font-family: 'Rubik', sans-serif;*/
+/*reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Para utilizar rem */
+
+html {
+    font-size: 62.5%;
+}
+
+/*Navegador*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: rgb(124, 151, 47);
+    border: black 1px solid;
+    justify-content: space-between;
+    min-height: 50px;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.header_logo_img{
+    padding-right: 10px;
+    height: 50px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.header_logo{
+    display: flex;
+    padding-left: 10px;
+    font-size: 15px;
+    align-items: center;
+}
+.header_nav_lista{
+    display: flex;
+    justify-content: right;
+}
+.header_nav_lista li{
+    list-style: none;
+    padding-right: 35px; 
+}
+.header_nav_lista li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: rubik, sans-serif,
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+/*body*/
+
+main{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+body{
+    /* background-color: rgb(234, 244, 244); */
+    background: rgb(124,151,47);
+    background: linear-gradient(180deg, rgba(124,151,47,0.77) 4%, rgba(23,128,93,1) 42%, rgba(0,212,255,1) 100%);
+    font-family:rubik, sans-serif;
+    text-align: center;
+}
+.main__parrafo{
+    font-size: 20px;
+}
+.section__parrafo{
+    font-size: 17px;
+}
+.section{
+    border: solid 5px rgb(173, 193, 120);
+    align-items: center;
+    font-size: 20px;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(225, 250, 249);
+    border-radius: 2rem;
+}
+.section img{
+    height: 70px
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.section_ruta img{
+    height: 100%;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.titulo{
+    font-size: 30px;
+}
+.subtitulo{
+    font-size: 20px;
+}
+footer{
+    background-color: rgb(169, 132, 103);
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer__ul li{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.footer__ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+#fotoMia{
+    height: 350px;
+    border: 5px black solid;
+    border-radius: 2rem;
+}
+
+/* grid de la pagina "tu entorno" */
+
+.grid{
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* hovers */
+
+.header_nav_lista li:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.header_nav_lista li a:hover{
+    color: white;
+}
+.link:hover{
+    color: rgb(173, 193, 120);
+    transition: all 0.5s;
+}
+#fotoMia:hover{
+    transform: scale(1.05);
+    transition: 0.5s linear;
+}
+
+/* animaciones */
+
+header{
+    animation: headerEntrada 0.7s ease-in-out;
+}
+
+/* keyframes */
+
+@keyframes headerEntrada{
+    from{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
