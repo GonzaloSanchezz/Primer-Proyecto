@@ -20,7 +20,7 @@ a{
     color: black;
 }
 header{
-    background-color: rgb(124, 151, 47);
+    background-color: rgb(195, 111, 9);
     border: black 1px solid;
     justify-content: space-between;
     min-height: 50px;
@@ -71,10 +71,10 @@ main{
 }
 body{
     /* background-color: rgb(234, 244, 244); */
-    background: rgb(124,151,47);
-    background: linear-gradient(180deg, rgba(124,151,47,0.77) 4%, rgba(23,128,93,1) 42%, rgba(0,212,255,1) 100%);
+    background: rgb(36, 39, 43);
     font-family:rubik, sans-serif;
     text-align: center;
+    color:aliceblue;
 }
 .main__parrafo{
     font-size: 20px;
@@ -83,12 +83,12 @@ body{
     font-size: 17px;
 }
 .section{
-    border: solid 5px rgb(173, 193, 120);
+    border: solid 5px rgb(195, 111, 9);
     align-items: center;
     font-size: 20px;
     margin: 50px;
     padding: 20px;
-    background-color: rgb(225, 250, 249);
+    background-color: rgb(36, 39, 43);
     border-radius: 2rem;
 }
 .section img{
@@ -101,7 +101,7 @@ body{
 }
 .link{
     text-decoration: none;
-    color: black;
+    color: aliceblue;
     font-weight: bold;
 }
 .titulo{
@@ -111,7 +111,7 @@ body{
     font-size: 20px;
 }
 footer{
-    background-color: rgb(169, 132, 103);
+    background-color: rgb(191, 189, 193);
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -151,7 +151,7 @@ footer{
     color: white;
 }
 .link:hover{
-    color: rgb(173, 193, 120);
+    color: rgb(195, 111, 9);
     transition: all 0.5s;
 }
 #fotoMia:hover{
