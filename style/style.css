@@ -189,11 +189,14 @@ footer{
         width: 900px;
     }
 }
+    
+    /* medium size */
 
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 600px){
     header{
         display: flex;
         flex-direction: column;
+        position: absolute;
     }
     .header_nav_lista{
         padding: 5px;
@@ -246,19 +249,22 @@ footer{
         border: 5px black solid;
     }
     #ruta{
-        width: 800px;
+        width: 480px;
     }
 
 }
 
-@media (max-width: 763px){
+    /* phone */
+
+@media (max-width: 600px){
 
     header{
         display: flex;
         flex-direction: column;
     }
     .header_nav_lista{
-        padding: 1110px;
+        padding: 10px;
+        flex-direction: column;
     }
     .header_nav_lista li{
         padding: 10px;
@@ -269,7 +275,7 @@ footer{
         align-content: center;
     }
     main{
-        padding-top: 120px;
+        padding-top: 300px;
         padding-bottom: 30px;
     }
     .header_nav_lista li a{
@@ -280,20 +286,21 @@ footer{
         font-size: 15px;
     }
     .main__parrafo{
-        font-size: 15px;
+        font-size: 12px;
     }
     .section__parrafo{
-        font-size: 13px;
+        font-size: 10px;
     }
     .section{
-        border: solid 4px rgb(195, 111, 9);
-        margin: 50px;
+        border: solid 3px rgb(195, 111, 9);
+        margin: 30px;
         padding: 20px;}
     .titulo{
-        font-size: 5px;
+        font-size: 15px;
     }
     .subtitulo{
-        font-size: 18px;
+        font-size: 13px;
+        padding-bottom: 5px;
     }
     footer{
         padding-top: 10px;
@@ -308,12 +315,13 @@ footer{
         border: 5px black solid;
     }
     #ruta{
-        width: 800px;
+        width: 400px;
+    }
+    iframe{
+        width: 400px;
     }
 
 }
-
-
 
 /* animaciones */
 
